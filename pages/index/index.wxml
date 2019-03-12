@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class="container">
+  <!--显示个人信息-->
+  <!--
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  -->
+  <!--输入搜索文档-->
+  <view class="section">
+    <view class="section__title">你输入的是：{{inputValue}}</view>
+    <input bindinput="bindKeyInput" placeholder="输入搜索信息" />
+  </view>
+
+  <!--搜索按钮-->
+  <button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}"
+    bindtap="showInfo" hover-class="other-button-hover">
+    搜索
+  </button>
+  
+  <!--选择性别-->
+  <picker bindchange="bindPickerChangeGender" value="{{gender}}" range="{{genders}}">
+    <button type="default">{{gender}}</button>
+  </picker>
+  
+  <!--选择年份-->
+  <picker bindchange="bindPickerChangeYear" value="{{year}}" range="{{years}}">
+    <button type="default">{{year}}</button>
+  </picker>
+
+  <!--选择学院-->
+  <picker bindchange="bindPickerChangeCollege" value="{{college}}" range="{{colleges}}">
+    <button type="default">{{college}}</button>
+  </picker>
+
+
+</view>
