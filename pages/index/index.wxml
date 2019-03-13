@@ -11,30 +11,33 @@
   </view>
   -->
   <!--输入搜索信息-->
-  <view class="section">
-    <input bindinput="bindKeyInput" placeholder="输入搜索信息" />
+  <view class="firstSection">
+
+    <input id="textInput" bindinput="bindKeyInput" placeholder="输入搜索信息" auto-focus />
+
+    <!--搜索按钮-->
+    <button id="searchButton" type="default" disabled="{{disabled}}" bindtap="showInfo" hover-class="button-hover">
+      搜索
+    </button>
   </view>
 
-  <!--搜索按钮-->
-  <button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}"
-    bindtap="showInfo" hover-class="other-button-hover">
-    搜索
-  </button>
-  
-  <!--选择性别-->
-  <picker bindchange="bindPickerChangeGender" value="{{gender}}" range="{{genders}}">
-    <button type="default">{{gender}}</button>
-  </picker>
-  
-  <!--选择年份-->
-  <picker bindchange="bindPickerChangeYear" value="{{year}}" range="{{years}}">
-    <button type="default">{{year}}年</button>
-  </picker>
+  <view class="secondSection">
+    <!--选择性别-->
+    <picker id="pickGender" bindchange="bindPickerChangeGender" value="{{gender}}" range="{{genders}}">
+      <view>{{gender}}</view>
+    </picker>
 
-  <!--选择学院-->
-  <picker bindchange="bindPickerChangeCollege" value="{{college}}" range="{{colleges}}">
-    <button type="default">{{college}}</button>
-  </picker>
+    <!--选择年份-->
+    <picker id="pickYear" bindchange="bindPickerChangeYear" value="{{year}}" range="{{years}}">
+      <view>{{year}}年</view>
+    </picker>
+
+    <!--选择学院-->
+    <picker id="pickCollege" bindchange="bindPickerChangeCollege" value="{{college}}" range="{{colleges}}">
+      <view>{{college}}</view>
+    </picker>
+  </view>
+
 
 
 </view>

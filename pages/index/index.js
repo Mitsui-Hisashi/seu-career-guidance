@@ -48,6 +48,7 @@ Page({
     ],
     college:'建筑学院',
     otherInfo:[],
+    defaultSize:'80rpx',
 
   },
   //事件处理函数
@@ -101,7 +102,6 @@ Page({
   },
   showInfo(e){
     console.log(this.data.otherInfo)
-    console.log(this.data.inputValue)
     console.log(this.data.gender)
     console.log(this.data.year)
     console.log(this.data.college)

@@ -1,21 +1,47 @@
 /**index.wxss**/
-.userinfo {
+
+.firstSection{
+  order: 1;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items:center;
+  width: 100%;
+  margin: 10rpx 0rpx;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+#textInput{
+  font-size: 34rpx;
+  background-color:silver;
+  padding: 16rpx 120rpx 0rpx 10rpx;
+  margin: 0rpx 0rpx 0rpx 20rpx;
+}
+#searchButton{
+  font-size: 34rpx;
+  
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.secondSection{
+  order:2;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items:center;
+  width: 100%;
+  margin: 10rpx 0rpx;
 }
 
-.usermotto {
-  margin-top: 200px;
+#pickGender{
+  margin: 0rpx 0rpx 0rpx 20rpx;
+  border: 2rpx;
+  border-style: dashed;
+  width: 50rpx;
+}
+
+#pickYear{
+
+}
+
+#pickCollege{
+  width: 200rpx;
 }
