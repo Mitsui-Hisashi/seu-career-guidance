@@ -10,9 +10,8 @@
     </block>
   </view>
   -->
-  <!--输入搜索文档-->
+  <!--输入搜索信息-->
   <view class="section">
-    <view class="section__title">你输入的是：{{inputValue}}</view>
     <input bindinput="bindKeyInput" placeholder="输入搜索信息" />
   </view>
 
@@ -29,7 +28,7 @@
   
   <!--选择年份-->
   <picker bindchange="bindPickerChangeYear" value="{{year}}" range="{{years}}">
-    <button type="default">{{year}}</button>
+    <button type="default">{{year}}年</button>
   </picker>
 
   <!--选择学院-->

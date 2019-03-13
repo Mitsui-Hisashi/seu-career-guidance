@@ -3,13 +3,9 @@
 const app = getApp()
 
 const years = []
-for(let i=0 ; i<=7 ; i++){
+for(let i=0 ; i<=6 ; i++){
   years.push(2012+i,)
 }
-
-
-
-
 
 Page({
   data: {
@@ -23,10 +19,35 @@ Page({
     year:2019,
     colleges:[
       '建筑学院',
+      '机械工程学院',
+      '能源与环境学院',
+      '信息科学与工程学院',
+      '电子科学与工程学院',
+      '数学学院',
+      '自动化学院',
+      '物理学院',
+      '生物科学与医学工程学院',
+      '材料科学与工程学院',
+      '经济管理学院',
+      '电气工程学院',
+      '外国语学院',
+      '化学化工学院',
+      '交通学院',
+      '仪器科学与工程学院',
+      '法学院',
       '医学院',
-      '计算机科学与工程学院'
+      '公共卫生学院',
+      '海外教育学院',
+      '软件学院',
+      '微电子学院',
+      '马克思主义学院',
+      '网络空间安全学院',
+      '人工智能学院',
+      '东南大学雷恩研究生学院',
+      '东南大学—蒙纳士大学苏州联合研究生院'
     ],
-    college:'建筑学院'
+    college:'建筑学院',
+    otherInfo:[],
 
   },
   //事件处理函数
@@ -76,8 +97,11 @@ Page({
     this.setData({
       inputValue: e.detail.value
     })
+    this.data.otherInfo=this.data.inputValue.trim().split(/\s+/)
   },
   showInfo(e){
+    console.log(this.data.otherInfo)
+    console.log(this.data.inputValue)
     console.log(this.data.gender)
     console.log(this.data.year)
     console.log(this.data.college)
