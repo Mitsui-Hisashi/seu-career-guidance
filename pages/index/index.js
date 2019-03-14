@@ -46,7 +46,7 @@ Page({
       '东南大学雷恩研究生学院',
       '东南大学—蒙纳士大学苏州联合研究生院'
     ],
-    college:'建筑学院',
+    college:'东南大学—蒙纳士大学苏州联合研究生院',
     otherInfo:[],
     defaultSize:'80rpx',
 

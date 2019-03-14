@@ -13,11 +13,18 @@
 #textInput{
   font-size: 34rpx;
   background-color:silver;
-  padding: 16rpx 120rpx 0rpx 10rpx;
-  margin: 0rpx 0rpx 0rpx 20rpx;
+  padding: 14rpx 0rpx;
+  border: 1rpx;
+  border-style: solid;
+  border-color: black;
+  border-radius: 20rpx;
+  flex-grow: 1;
+  margin: 0rpx 10rpx;
 }
 #searchButton{
+  margin: 0rpx 10rpx;
   font-size: 34rpx;
+  flex-grow: 1;
   
 }
 
@@ -32,16 +39,41 @@
 }
 
 #pickGender{
-  margin: 0rpx 0rpx 0rpx 20rpx;
-  border: 2rpx;
-  border-style: dashed;
-  width: 50rpx;
+  flex-basis:60rpx;
+  padding: 10rpx 0rpx ;
+  background-color:whitesmoke;
+  border-top: 2rpx;
+  border-top-style: solid;
+  border-top-color: black;
+  border-bottom: 2rpx;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  margin-left: 10rpx;
 }
 
 #pickYear{
-
+  flex-basis:150rpx;
+  padding: 10rpx 0rpx;
+  background-color:whitesmoke;
+  border-top: 2rpx;
+  border-top-style: solid;
+  border-top-color: black;
+  border-bottom: 2rpx;
+  border-bottom-style: solid;
+  border-bottom-color: black;
 }
 
 #pickCollege{
-  width: 200rpx;
+  background-color:whitesmoke;
+  padding: 10rpx 0rpx;
+  flex-basis:525rpx;
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: clip;   
+  border-top: 2rpx;
+  border-top-style: solid;
+  border-top-color: black; 
+  border-bottom: 2rpx;
+  border-bottom-style: solid;
+  border-bottom-color: black;                      
 }
