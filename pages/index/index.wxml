@@ -24,17 +24,17 @@
   <view class="secondSection">
     <!--选择性别-->
     <picker id="pickGender" bindchange="bindPickerChangeGender" value="{{gender}}" range="{{genders}}">
-      <view>{{gender}}</view>
+      <view>▾{{gender}}</view>
     </picker>
 
     <!--选择年份-->
     <picker id="pickYear" bindchange="bindPickerChangeYear" value="{{year}}" range="{{years}}">
-      <view>{{year}}年</view>
+      <view>▾{{year}}年</view>
     </picker>
 
     <!--选择学院-->
     <picker id="pickCollege" bindchange="bindPickerChangeCollege" value="{{college}}" range="{{colleges}}">
-      <view>{{college}}</view>
+      <view>▾{{college}}</view>
     </picker>
   </view>
 
