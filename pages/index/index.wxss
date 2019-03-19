@@ -21,12 +21,12 @@
   flex-grow:20;
   margin: 0rpx 5rpx 0rpx 20rpx;
 }
-#searchButton{
+.searchButton{
   font-size: 34rpx;
   flex-grow: 0;
   margin: 0rpx 20rpx 0rpx 5rpx;
-  background-color:#888;
   color:white;
+  background-color: green;
   
 }
 
@@ -67,4 +67,7 @@
   text-overflow: clip;   
   flex-grow: 1;  
    
+}
+.other-button-hover{
+  background-color:#888;
 }

@@ -16,7 +16,7 @@
     <input id="textInput" bindinput="bindKeyInput" placeholder="输入搜索信息" auto-focus />
 
     <!--搜索按钮-->
-    <button id="searchButton" type="default" disabled="{{disabled}}" bindtap="showInfo" hover-class="button-hover">
+    <button class="searchButton"  bindtap="showInfo" hover-class="other-button-hover">
       搜索
     </button>
   </view>
