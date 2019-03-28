@@ -6,5 +6,9 @@
   align-items: flex-start;
   justify-content: space-between;
   box-sizing: border-box;
+  
 } 
+page{
+  background-color: #F8F8F8;
+}
 
