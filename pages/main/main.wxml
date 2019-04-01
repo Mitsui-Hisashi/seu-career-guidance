@@ -26,6 +26,16 @@
                 </view>
             </picker>
         </view>
+
+        <view class="weui-cells__title">选择毕业年份</view>
+        <view class="weui-cells weui-cells_after-title">
+            <picker bindchange="bindPickerYear" value="{{yearIndex}}" range="{{year}}">
+                <view class="weui-cell">
+                    <view class="weui-cell__bd">毕业年份</view>
+                    <view class="weui-cell__ft">{{yearDisp}}</view>
+                </view>
+            </picker>
+        </view>
     </view>
 
 </view>

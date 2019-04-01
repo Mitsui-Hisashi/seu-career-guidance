@@ -14,6 +14,10 @@ Page({
     ganderDisp:'不限',
     ganderIndex: 0,
 
+    year: ['不限','2017', '2016','2015','2014'],
+    yearDisp:'不限',
+    yearIndex: 0,
+
 
   },
 
@@ -84,6 +88,13 @@ Page({
     this.setData({
       ganderIndex:e.detail.value,
       ganderDisp: this.data.gander[e.detail.value]
+    })
+  },
+
+  bindPickerYear: function(e){
+    this.setData({
+      yearIndex:e.detail.value,
+      yearDisp:this.data.year[e.detail.value]
     })
   }
 
