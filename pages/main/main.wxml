@@ -36,6 +36,15 @@
                 </view>
             </picker>
         </view>
+
+
+        
+        
+
+
+    </view>
+    <view class="page__bd page__bd_spacing">
+         <button class="weui-btn" type="primary">搜索</button>
     </view>
 
 </view>
