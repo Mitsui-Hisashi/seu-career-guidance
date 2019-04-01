@@ -1,31 +1,31 @@
-<view class="main">
-    <view class="main_head">
-        <view class="main_head_title">就业指导中心信息搜索平台</view>
-        <view class="main_head_subheading">信息检索</view>
-        <button class="searchButton" bindtap="showInfo" hover-class="other-button-hover">搜索</button>
+<!--pages/main/main.wxml-->
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">就业指导中心搜索平台</view>
+        <view class="page__desc">信息检索</view>
     </view>
+    <view class="page__bd">
+        <view class="weui-cells__title">选择学院</view>
+        <view class="weui-cells weui-cells_after-title">
+            <picker bindchange="bindPickerCollege" value="{{collegeIndex}}" range="{{college}}">
+                <view class="weui-cell">
+                    <view class="weui-cell__bd">学院</view>
+                    <view class="weui-cell__ft">{{collegeDisp}}</view>
+                </view>
+            </picker>
+        </view>
 
-    <view class="second_section">
-        <view class="gender_select_title">性别选择</view>
-        <view class="gender_select">
-            <radio-group bindchange="radioChange">
-                <label class="radio_label" wx:for="{{radioItems}}" wx:key="value">
-                    <radio class="radio_item" value="{{item.value}}" checked="{{item.checked}}" />
-                    <view class="radio_txt">{{item.name}}</view>
-                </label>
 
-            </radio-group>
+
+        <view class="weui-cells__title">选择性别</view>
+        <view class="weui-cells weui-cells_after-title">
+            <picker bindchange="bindPickerGander" value="{{ganderIndex}}" range="{{gander}}">
+                <view class="weui-cell">
+                    <view class="weui-cell__bd">性别</view>
+                    <view class="weui-cell__ft">{{ganderDisp}}</view>
+                </view>
+            </picker>
         </view>
     </view>
-
-    <view class="third_section">
-        <view class="college_select_title">学院选择</view>
-        <picker class="college_select" bindchange="bindPickerChangeCollege" value="{{colleges.value}}" range="{{colleges}}">
-            <view>学院:{{college}}</view>
-        </picker>
-
-    </view>
-
-
 
 </view>
